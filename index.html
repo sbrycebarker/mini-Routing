@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+<title>DevMountain Travels</title>
+<link type="styles" href="style.css">
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li><a ui-sref="home">Home</a></li>
+        <li>
+          Products
+          <ul>
+            <li><a ui-sref="products({id: 'shoes'})">Shoes</a></li>
+            <li><a ui-sref="products({id: 'socks'})">Socks</a></li>
+      </ul>
+    </li>
+    <li><a ui-sref="settings"> Settings </a></li>
+  </ul>
+</div>
+
+<div class="view-container">
+  <div ui-view></div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+  <script="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"</script>
+  <script="./js/app.js"></script>
+  <script="./js/products/productsCtrl.js"></script>
+  <script="./js/home/homeCtrl.js"></script>
+  <script="./js/settings/settingsCtrl.js"></script>
+</body>
+</html>
